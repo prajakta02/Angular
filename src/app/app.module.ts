@@ -8,6 +8,7 @@ import {FlexLayoutModule } from '@angular/flex-layout';import { MenuComponent } 
 
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { DishService } from './services/dish.service';
+import {PromotionService} from './services/promotion.service';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -45,7 +46,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 
   ],
   providers: [
-    DishService
+    DishService,
+    PromotionService
   ],
   bootstrap: [AppComponent]
 })
